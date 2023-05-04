@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <style>
         .accordion {
           background-color: #eee;
@@ -16,14 +17,15 @@
         }
         
         .active, .accordion:hover {
-          background-color: #ccc; 
+          background-color: #ccc;
         }
         
         .panel {
           padding: 0 18px;
-          display: none;
           background-color: white;
+          max-height: 0;
           overflow: hidden;
+          transition: max-height 0.2s ease-out;
         }
         </style>
     </head>
