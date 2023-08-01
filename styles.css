@@ -1,1 +1,5 @@
-/* Style the buttons that are used to open and close the accordion panel */
+const mymap = L.map('map').setView([51.505, -0.09], 13);
+L.tileLayer('https://mapgenie.io/sons-of-the-forest/maps/world/{z}/{x}/{y}.png', {
+    attribution: 'Map data &copy; <a href="https://mapgenie.io/sons-of-the-forest/maps/world">OpenStreetMap</a> contributors',
+    maxZoom: 18
+}).addTo(mymap);
